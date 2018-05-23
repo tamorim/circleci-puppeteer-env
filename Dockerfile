@@ -1,6 +1,6 @@
 FROM node:8-slim
 
-RUN apt-get update && apt-get install -yq git ssh tar gzip ca-certificates
+RUN apt-get update && apt-get install -yq git ssh tar gzip ca-certificates jq curl
 
 # See https://crbug.com/795759
 RUN apt-get update && apt-get install -yq libgconf-2-4
